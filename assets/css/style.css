@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
 /* css variable */
-:root{
+:root {
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Macondo', cursive;
     --primary-color: #3a2620;
@@ -12,60 +12,74 @@
 }
 
 /* Global styles */
-body{
+body {
     font-family: var(--primary-font);
 }
 
 h1,
 h2,
-h3{
+h3 {
     font-family: var(--secondary-font);
-    color: var(--primary-color);  
+    color: var(--primary-color);
 }
 
 h1,
-h2{
+h2 {
     text-transform: uppercase;
 }
 
 
-h2{
+h2 {
     margin-bottom: 2rem;
 }
 
-.sub-heading-color{
+.sub-heading-color {
     color: var(--highlight-color);
 }
 
-.section{
+.section {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 /* Navbar */
-#navbar{
+#navbar {
     background-color: var(--primary-color);
 }
 
-#navbar .logo{
+#navbar .logo {
     width: 30px;
 }
 
 /* Header */
-#header .lead{
+#header .lead {
     font-family: var(--secondary-font);
-    
+
 }
 
 /* services */
-#services .card-footer{
+#services .card-footer {
     background-color: transparent;
     color: var(--highlight-color);
     font-weight: bold;
 }
 
-#services .card{
+#services .card {
     margin-bottom: 1.5rem;
+}
+
+
+/* Game library */
+#new-games .card,
+#fav-games .card {
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+#new-games .card-footer,
+#fav-games .card-footer {
+    border: none;
+    background-color: transparent;
 }
 
 
@@ -83,32 +97,47 @@ h2{
 
 /* Medium devices (tables, 768px and up) */
 @media screen and (min-width: 768px) {
+
     /* make all service cards the same height for consistency */
-   #services .card-body{
-       min-height: 191px;
-   }
+    #services .card-body,
+    #new-games .card-body,
+    #fav-games .card-body {
+        min-height: 214px;
+        
+    }
 }
 
 /* Medium devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
+
     /* make all service cards the same height for consistency */
-   #services .card-body{
-       min-height: auto;
-   }
+    #services .card-body,
+    #new-games .card-body,
+    #fav-games .card-body {
+        min-height: auto;
+    }
 }
 
 /* Xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
     /* make all service cards the same height for consistency */
-   #services .card-body{
-       min-height: 220px;
-   }
+    #services .card-body,
+    #new-games .card-body,
+    #fav-games .card-body {
+        min-height: 220px;
+        
+    }
 }
 
 /* Xxl devices (large desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
+
     /* make all service cards the same height for consistency */
-   #services .card-body{
-       min-height: 195px;
-   }
+    #services .card-body,
+    #new-games .card-body,
+    #fav-games .card-body {
+        min-height: 195px;
+        
+    }
 }
