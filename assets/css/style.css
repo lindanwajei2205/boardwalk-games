@@ -99,6 +99,11 @@ a{
     margin-bottom: 1.5rem;
 }
 
+/* event */
+.custom-bg-color{
+    background-color: #416a8e;
+}
+
 
 /* Game library */
 #new-games .card,
@@ -148,6 +153,8 @@ a{
 #contact .table-dark *{
     background-color: transparent;
 }
+
+
 
 /* .container,
 .row{
